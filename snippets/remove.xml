@@ -52,6 +52,9 @@
   <remove-project name="device/google/pantah" />
   <remove-project name="device/google/pantah-kernel" />
   <remove-project name="device/google/pantah-sepolicy" />
+  <remove-project name="device/google/lynx" />
+  <remove-project name="device/google/lynx-kernel" />
+  <remove-project name="device/google/lynx-sepolicy" />
   <remove-project name="device/google/vrservices" />
   <remove-project name="device/linaro/dragonboard" />
   <remove-project name="device/linaro/dragonboard-kernel" />
