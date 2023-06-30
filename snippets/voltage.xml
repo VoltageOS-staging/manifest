@@ -111,7 +111,7 @@
     <project path="prebuilts/clang/host/linux-x86/trb_clang" name="varunhardgamer/trb_clang" clone-depth="1" revision="17" remote="gitlab" />
 
     <!-- External -->
-    <project path="external/seedvault" name="external_seedvault" remote="voltage" />
+    <project path="external/seedvault" name="external_seedvault" remote="voltage-staging" />
     <project path="external/tinyxml" name="external_tinyxml" remote="voltage" /> 
     <project path="external/GmsCompatConfig" name="external_GmsCompatConfig" remote="voltage-staging" />
     <project path="external/tinycompress" name="external_tinycompress" remote="voltage" />
