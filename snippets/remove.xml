@@ -138,5 +138,6 @@
   <remove-project name="platform/external/jemalloc_new"/>
   <remove-project name="platform/external/sqlite"/>
   <remove-project name="platform/external/arm-optimized-routines" />
+  <remove-project name="platform/external/gptfdisk" />
 
 </manifest>
