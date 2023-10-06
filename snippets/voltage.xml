@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="voltage"
+           revision="14"
+           fetch="https://github.com/VoltageOS-staging" />
+
+  <remote  name="VoltageOS-Devices"
+           revision="13"
+           fetch="https://github.com/VoltageOS-Devices" />
+
+  <remote  name="gitlab"
+           fetch="https://gitlab.com/" />
+
+  <!-- Build -->
+  <project path="build/make" name="b" remote="voltage">
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <project path="build/soong" name="s" remote="voltage" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+
+  <project path="art" name="art" remote="voltage" />
+  <project path="bionic" name="bionic" remote="voltage" />
+  <project path="bootable/recovery" name="bootable_recovery" remote="voltage" />
+
+  <!-- External -->
+  <project path="external/cronet" name="voltageos/externel_cronet" revision="14" remote="gitlab" />
+
+  <!-- Hardware -->
+  <project path="hardware/libhardware" name="hardware_libhardware" remote="voltage" />
+  <project path="hardware/lineage/interfaces" name="hardware_voltage_interfaces" remote="voltage" />
+  <project path="hardware/qcom-caf/msm8996/audio" name="hardware_qcom_audio" revision="14-msm8996" remote="voltage" />
+  <project path="hardware/qcom-caf/msm8996/display" name="hardware_qcom_display" revision="14-msm8996" remote="voltage" />
+  <project path="hardware/qcom-caf/msm8996/media" name="hardware_qcom_media" revision="14-msm8996" remote="voltage" />
+  <project path="hardware/qcom-caf/msm8998/audio" name="hardware_qcom_audio" revision="13-msm8998" remote="voltage" />
+  <project path="hardware/qcom-caf/msm8998/display" name="hardware_qcom_display" revision="13-msm8998" remote="voltage" />
+  <project path="hardware/qcom-caf/msm8998/media" name="hardware_qcom_media" revision="13-msm8998" remote="voltage" />
+  <project path="hardware/qcom-caf/sm8150/audio" name="hardware_qcom_audio" revision="14-sm8150" remote="voltage" />
+  <project path="hardware/qcom-caf/sm8150/display" name="hardware_qcom_display" revision="14-sm8150" remote="voltage" />
+  <project path="hardware/qcom-caf/sm8150/media" name="hardware_qcom_media" revision="14-sm8150" remote="voltage" />
+
+  <!-- Inline kernel build -->
+  <project path="prebuilts/clang/host/linux-x86/trb_clang" name="voltageos/clang" revision="test" remote="gitlab" />
+
+  <!-- Packages -->
+  <project path="packages/apps/Settings" name="Settings" remote="voltage" />
+
+  <!-- System -->
+  <project path="system/core" name="system_core" remote="voltage" />
+
+  <!-- Vendor -->
+  <project path="vendor/codeaurora/telephony" name="vendor_codeaurora_telephony" remote="voltage" />
+  <project path="vendor/qcom/opensource/commonsys/display" name="vendor_qcom_opensource_display-commonsys" remote="voltage" />
+  <project path="vendor/qcom/opensource/commonsys-intf/display" name="vendor_qcom_opensource_display-commonsys-intf" remote="voltage" />
+  <project path="vendor/qcom/opensource/display" name="vendor_qcom_opensource_display" remote="voltage" />
+  <project path="vendor/qcom/opensource/vibrator" name="vendor_qcom_opensource_vibrator" remote="voltage" />
+  <project path="vendor/voltage" name="vendor" remote="voltage" />
+
+</manifest>
