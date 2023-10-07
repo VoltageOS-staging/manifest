@@ -48,6 +48,9 @@
   <remove-project name="device/google/tangorpro-kernel" />
   <remove-project name="device/google/tangorpro-sepolicy" />
 
+  <!-- Framework -->
+  <remove-project name="platform/frameworks/opt/telephony" />
+
   <!-- External -->
   <remove-project name="platform/external/cronet"/>
 
@@ -57,6 +60,18 @@
 
   <!-- Packages -->
   <remove-project name="platform/packages/apps/Settings" />
+  <remove-project name="platform/packages/apps/SettingsIntelligence" />
+  <remove-project name="platform/packages/apps/Launcher3" />
+  <remove-project name="platform/packages/apps/Nfc" />
+  <remove-project name="platform/packages/apps/ThemePicker" />
+  <remove-project name="platform/packages/apps/Dialer" />
+  <remove-project name="platform/packages/apps/DeskClock" />
+  <remove-project name="platform/packages/apps/Messaging" />
+  <remove-project name="platform/packages/apps/Calendar" />
+  <remove-project name="platform/packages/apps/Contacts" />
+  <remove-project name="platform/packages/apps/DocumentsUI" />
+  <remove-project name="platform/packages/apps/Stk" />
+  <remove-project name="platform/packages/inputmethods/LatinIME" />
 
   <!-- System -->
   <remove-project name="platform/system/core"/>
