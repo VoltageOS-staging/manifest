@@ -36,6 +36,7 @@
   <project path="bootable/recovery" name="bootable_recovery" remote="voltage" />
 
   <!-- Framework -->
+  <project path="frameworks/libs/net" name="frameworks_libs_net" remote="voltage" />
   <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="voltage" />
 
   <!-- External -->
@@ -75,9 +76,12 @@
   <project path="packages/apps/Stk" name="packages_apps_Stk" remote="voltage" />
   <project path="packages/apps/Eleven" name="packages_apps_Eleven" remote="voltage-main" />
   <project path="packages/inputmethods/LatinIME" name="packages_inputmethods_LatinIME" remote="voltage" />
+  <project path="packages/modules/Connectivity" name="voltageos/packages_modules_connectivity" revision="14" remote="gitlab" />
 
   <!-- System -->
+  <project path="system/bpf" name="system_bpf" remote="voltage" />
   <project path="system/core" name="system_core" remote="voltage" />
+  <project path="system/netd" name="system_netd" remote="voltage" />
 
   <!-- Vendor -->
   <project path="vendor/codeaurora/telephony" name="vendor_codeaurora_telephony" remote="voltage" />
