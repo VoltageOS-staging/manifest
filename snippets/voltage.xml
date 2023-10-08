@@ -36,8 +36,13 @@
   <project path="bootable/recovery" name="bootable_recovery" remote="voltage" />
 
   <!-- Framework -->
+  <project path="frameworks/av" name="frameworks_av" remote="voltage" />
+  <project path="frameworks/base" name="frameworks_base" remote="voltage" />
+  <project path="frameworks/native" name="frameworks_native" remote="voltage" />
+  <project path="frameworks/libs/systemui" name="frameworks_libs_systemui" remote="voltage" />
   <project path="frameworks/libs/net" name="frameworks_libs_net" remote="voltage" />
   <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="voltage" />
+  <project path="frameworks/libs/modules-utils" name="frameworks_libs_modules-utils" remote="voltage" />
 
   <!-- External -->
   <project path="external/cronet" name="voltageos/externel_cronet" revision="14" remote="gitlab" />

@@ -49,8 +49,13 @@
   <remove-project name="device/google/tangorpro-sepolicy" />
 
   <!-- Framework -->
+  <remove-project name="platform/frameworks/av" />
+  <remove-project name="platform/frameworks/base" />
+  <remove-project name="platform/frameworks/native" />
   <remove-project name="platform/frameworks/libs/net" />
+  <remove-project name="platform/frameworks/libs/systemui" />
   <remove-project name="platform/frameworks/opt/telephony" />
+  <remove-project name="platform/frameworks/libs/modules-utils" />
 
   <!-- External -->
   <remove-project name="platform/external/cronet"/>
