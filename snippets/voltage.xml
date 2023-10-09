@@ -76,7 +76,7 @@
   <project path="packages/apps/ExactCalculator" name="packages_apps_ExactCalculator" remote="voltage-main" />
   <project path="packages/apps/Messaging" name="packages_apps_Messaging" remote="voltage" />
   <project path="packages/apps/Contacts" name="packages_apps_Contacts" remote="voltage" />
-  <project path="packages/apps/Flash" name="packages_apps_Flash" remote="voltage-main" />
+  <project path="packages/apps/Flash" name="packages_apps_Flash" remote="voltage" />
   <project path="packages/apps/Etar" name="packages_apps_Etar" remote="voltage-main" />
   <project path="packages/apps/Stk" name="packages_apps_Stk" remote="voltage" />
   <project path="packages/apps/Eleven" name="packages_apps_Eleven" remote="voltage-main" />
