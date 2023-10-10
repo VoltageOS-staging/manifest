@@ -93,6 +93,7 @@
   <project path="packages/providers/DownloadProvider" name="packages_providers_DownloadProvider" remote="voltage" />
   <project path="packages/providers/MediaProvider" name="packages_providers_MediaProvider" remote="voltage" />
   <project path="packages/providers/ContactsProvider" name="packages_providers_ContactsProvider" remote="voltage" />
+  <project path="packages/providers/TelephonyProvider" name="packages_providers_TelephonyProvider" remote="voltage" />
 
   <!-- External -->
   <project path="external/cronet" name="voltageos/externel_cronet" revision="14" remote="gitlab" />
