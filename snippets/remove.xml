@@ -65,6 +65,7 @@
   <!-- Hardware -->
   <remove-project name="platform/hardware/libhardware"/>
   <remove-project name="platform/hardware/qcom/wlan"/>
+  <remove-project name="platform/hardware/interfaces"/>
 
   <!-- Packages -->
   <remove-project name="platform/packages/apps/Settings" />
@@ -101,5 +102,7 @@
   <remove-project name="platform/system/core"/>
   <remove-project name="platform/system/netd" />
   <remove-project name="platform/system/librustutils" />
+  <remove-project name="platform/system/vold" />
+  <remove-project name="platform/system/security" />
 
 </manifest>

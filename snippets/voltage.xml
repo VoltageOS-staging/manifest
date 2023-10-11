@@ -47,6 +47,7 @@
 
   <!-- Hardware -->
   <project path="hardware/libhardware" name="hardware_libhardware" remote="voltage" />
+  <project path="hardware/interfaces" name="hardware_interfaces" remote="voltage" />
   <project path="hardware/lineage/interfaces" name="hardware_voltage_interfaces" remote="voltage" />
   <project path="hardware/qcom-caf/msm8996/audio" name="hardware_qcom_audio" revision="14-msm8996" remote="voltage" />
   <project path="hardware/qcom-caf/msm8996/display" name="hardware_qcom_display" revision="14-msm8996" remote="voltage" />
@@ -105,6 +106,8 @@
   <project path="system/core" name="system_core" remote="voltage" />
   <project path="system/netd" name="system_netd" remote="voltage" />
   <project path="system/librustutils" name="system_librustutils" remote="voltage" />
+  <project path="system/vold" name="system_vold" remote="voltage" />
+  <project path="system/security" name="system_security" remote="voltage" />
 
   <!-- Vendor -->
   <project path="vendor/codeaurora/telephony" name="vendor_codeaurora_telephony" remote="voltage" />
