@@ -63,7 +63,7 @@
   <project path="prebuilts/clang/host/linux-x86/trb_clang" name="voltageos/clang" revision="test" remote="gitlab" />
 
   <!-- Packages -->
-  <project path="packages/apps/Settings" name="Settings" remote="voltage" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="voltage" />
   <project path="packages/apps/SettingsIntelligence" name="packages_apps_SettingsIntelligence" remote="voltage" />
   <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" remote="voltage" />
   <project path="packages/apps/Nfc" name="packages_apps_Nfc" remote="voltage" />
@@ -115,6 +115,6 @@
   <project path="vendor/qcom/opensource/commonsys-intf/display" name="vendor_qcom_opensource_display-commonsys-intf" remote="voltage" />
   <project path="vendor/qcom/opensource/display" name="vendor_qcom_opensource_display" remote="voltage" />
   <project path="vendor/qcom/opensource/vibrator" name="vendor_qcom_opensource_vibrator" remote="voltage" />
-  <project path="vendor/voltage" name="vendor" remote="voltage" />
+  <project path="vendor/voltage" name="vendor_voltage" remote="voltage" />
 
 </manifest>
