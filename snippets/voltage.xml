@@ -109,6 +109,7 @@
   <project path="external/GmsCompatConfig" name="external_GmsCompatConfig" remote="voltage" />
   <project path="external/tinycompress" name="external_tinycompress" remote="voltage" />
   <project path="external/gptfdisk" name="external_gptfdisk" remote="voltage" />
+  <project path="external/mksh" name="external_mksh" remote="voltage" />
 
   <!-- System -->
   <project path="system/bpf" name="system_bpf" remote="voltage" />
