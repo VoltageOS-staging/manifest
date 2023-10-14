@@ -65,6 +65,7 @@
 
   <!-- External -->
   <remove-project name="platform/external/cronet"/>
+  <remove-project name="platform/external/tinycompress"/>
 
   <!-- Hardware -->
   <remove-project name="platform/hardware/libhardware"/>

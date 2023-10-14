@@ -107,6 +107,7 @@
   <project path="external/cronet" name="voltageos/externel_cronet" revision="14" remote="gitlab" />
   <project path="external/tinyxml" name="external_tinyxml" remote="voltage-main" />
   <project path="external/GmsCompatConfig" name="external_GmsCompatConfig" remote="voltage" />
+  <project path="external/tinycompress" name="external_tinycompress" remote="voltage" />
 
   <!-- System -->
   <project path="system/bpf" name="system_bpf" remote="voltage" />
