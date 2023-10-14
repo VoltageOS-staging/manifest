@@ -36,6 +36,13 @@
   <project path="libcore" name="libcore" remote="voltage" />
   <project path="bootable/recovery" name="bootable_recovery" remote="voltage" />
 
+  <!-- Device -->
+  <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" remote="voltage-main" />
+  <project path="device/voltage/sepolicy" name="device_voltage_sepolicy" remote="voltage" />
+  <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy-legacy-um" remote="voltage-main" />
+  <project path="device/qcom/sepolicy_vndr" name="device_qcom_sepolicy_vndr" remote="voltage-main" />
+  <project path="device/qcom/sepolicy_vndr-legacy-um" name="device_qcom_sepolicy_vndr-legacy-um" remote="voltage-main" />
+
   <!-- Framework -->
   <project path="frameworks/av" name="frameworks_av" remote="voltage" />
   <project path="frameworks/base" name="frameworks_base" remote="voltage" />
@@ -109,6 +116,7 @@
   <project path="system/vold" name="system_vold" remote="voltage" />
   <project path="system/security" name="system_security" remote="voltage" />
   <project path="system/libhidl" name="system_libhidl" remote="voltage" />
+  <project path="system/sepolicy" name="system_sepolicy" remote="voltage" />
 
   <!-- Vendor -->
   <project path="vendor/codeaurora/telephony" name="vendor_codeaurora_telephony" remote="voltage" />
