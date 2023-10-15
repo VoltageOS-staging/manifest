@@ -60,7 +60,9 @@
   <remove-project name="platform/frameworks/native" />
   <remove-project name="platform/frameworks/libs/net" />
   <remove-project name="platform/frameworks/libs/systemui" />
+  <remove-project name="platform/frameworks/opt/calendar" />
   <remove-project name="platform/frameworks/opt/telephony" />
+  <remove-project name="platform/frameworks/opt/timezonepicker" />
   <remove-project name="platform/frameworks/libs/modules-utils" />
 
   <!-- External -->
@@ -82,6 +84,7 @@
   <remove-project name="platform/packages/apps/ThemePicker" />
   <remove-project name="platform/packages/apps/Dialer" />
   <remove-project name="platform/packages/apps/DeskClock" />
+  <remove-project name="platform/packages/apps/Gallery2" />
   <remove-project name="platform/packages/apps/Messaging" />
   <remove-project name="platform/packages/apps/Calendar" />
   <remove-project name="platform/packages/apps/Contacts" />

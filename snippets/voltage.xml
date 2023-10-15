@@ -49,7 +49,9 @@
   <project path="frameworks/native" name="frameworks_native" remote="voltage" />
   <project path="frameworks/libs/systemui" name="frameworks_libs_systemui" remote="voltage" />
   <project path="frameworks/libs/net" name="frameworks_libs_net" remote="voltage" />
+  <project path="frameworks/opt/calendar" name="frameworks_opt_calendar" remote="voltage" />
   <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="voltage" />
+  <project path="frameworks/opt/timezonepicker" name="frameworks_opt_timezonepicker" remote="voltage" />
   <project path="frameworks/libs/modules-utils" name="frameworks_libs_modules-utils" remote="voltage" />
 
   <!-- Hardware -->
@@ -82,9 +84,10 @@
   <project path="packages/apps/Messaging" name="packages_apps_Messaging" remote="voltage" />
   <project path="packages/apps/Contacts" name="packages_apps_Contacts" remote="voltage" />
   <project path="packages/apps/Flash" name="packages_apps_Flash" remote="voltage" />
-  <project path="packages/apps/Etar" name="packages_apps_Etar" remote="voltage-main" />
+  <project path="packages/apps/Gallery2" name="packages_apps_Gallery2" remote="voltage" />
+  <project path="packages/apps/Etar" name="packages_apps_Etar" remote="voltage" />
   <project path="packages/apps/Stk" name="packages_apps_Stk" remote="voltage" />
-  <project path="packages/apps/Eleven" name="packages_apps_Eleven" remote="voltage-main" />
+  <project path="packages/apps/Eleven" name="packages_apps_Eleven" remote="voltage" />
   <project path="packages/apps/GmsCompat" name="packages_apps_GmsCompat" remote="voltage" />
   <project path="packages/inputmethods/LatinIME" name="packages_inputmethods_LatinIME" remote="voltage" />
   <project path="packages/services/Telephony" name="packages_services_Telephony" remote="voltage" />
