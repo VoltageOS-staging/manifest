@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="vos"
+           revision="14"
+           fetch="https://github.com/VoltageOS" />
+
+  <remote  name="st"
+           revision="14"
+           fetch="https://github.com/VoltageOS-staging" />
+
+  <remote  name="VoltageOS-Devices"
+           revision="14"
+           fetch="https://github.com/VoltageOS-Devices" />
+
+  <remote  name="gitlab"
+           revision="14-qpr2"
+           fetch="https://gitlab.com/voltageos" />
+
+  <remote  name="bitbucket"
+           revision="14"
+           fetch="https://bitbucket.org/shuttercat" />
+
+  <!-- Build -->
+  <project path="build/make" name="build" remote="st">
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <project path="build/soong" name="build_soong" remote="st" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+
+  <project path="art" name="art" remote="st" />
+  <project path="bionic" name="bionic" remote="st" />
+  <project path="bootable/recovery" name="bootable_recovery" remote="st" />
+  <project path="libcore" name="libcore" remote="st" />
+
+  <!-- Device -->
+  <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy-legacy-um" remote="vos" />
+  <project path="device/voltage/sepolicy" name="device_voltage_sepolicy" remote="vos" />
+
+  <!-- Framework -->
+  <project path="frameworks/av" name="frameworks_av" remote="st" />
+  <project path="frameworks/base" name="frameworks_base" remote="st" />
+  <project path="frameworks/libs/modules-utils" name="frameworks_libs_modules-utils" remote="st" />
+  <project path="frameworks/libs/systemui" name="frameworks_libs_systemui" remote="st" />
+  <project path="frameworks/native" name="frameworks_native" remote="st" />
+  <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="st" />
+
+  <!-- Hardware -->
+  <project path="hardware/interfaces" name="hardware_interfaces" remote="st" />
+  <project path="hardware/libhardware" name="hardware_libhardware" remote="st" />
+  <project path="hardware/lineage/interfaces" name="hardware_voltage_interfaces" remote="vos" />
+  <project path="hardware/qcom-caf/common" name="hardware_qcom-caf_common" remote="vos" >
+    <!-- add guard for AOSP hardware/qcom dir -->
+    <linkfile src="os_pickup_aosp.mk" dest="hardware/qcom/Android.mk" />
+    <!-- add guards for CAF repositories -->
+    <linkfile src="os_pickup_sepolicy_vndr.mk" dest="device/qcom/sepolicy_vndr/SEPolicy.mk" />
+    <linkfile src="os_pickup.bp" dest="hardware/qcom-caf/msm8996/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8996/Android.mk" />
+    <linkfile src="os_pickup.bp" dest="hardware/qcom-caf/msm8998/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8998/Android.mk" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sdm660/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sdm660/Android.mk" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sdm845/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sdm845/Android.mk" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8150/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8150/Android.mk" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8250/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8250/Android.mk" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8350/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8350/Android.mk" />
+    <linkfile src="os_pickup_audio-ar.mk" dest="hardware/qcom-caf/sm8450/audio/Android.mk" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8450/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8450/Android.mk" />
+    <linkfile src="os_pickup_audio-ar.mk" dest="hardware/qcom-caf/sm8550/audio/Android.mk" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8550/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8550/Android.mk" />
+    <!-- add guards for Pixel kernel modules -->
+    <linkfile src="os_pickup.bp" dest="kernel/google/gs201/private/google-modules/Android.bp" />
+  </project>
+  <project path="hardware/qcom-caf/sm8150/display" name="hardware_qcom_display" revision="14-sm8150" remote="vos" />
+
+  <project path="prebuilts/clang/host/linux-x86/trb_clang" name="clang" remote="bitbucket" />
+
+  <!-- Packages -->
+  <project path="packages/apps/Contacts" name="packages_apps_Contacts" remote="st" />
+  <project path="packages/apps/Covers" name="packages_apps_Covers" remote="vos" />
+  <project path="packages/apps/DeskClock" name="packages_apps_DeskClock" remote="vos" />
+  <project path="packages/apps/Dialer" name="packages_apps_Dialer" remote="st" />
+  <project path="packages/apps/DocumentsUI" name="packages_apps_DocumentsUI" remote="st" />
+  <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" remote="st" />
+  <project path="packages/apps/Messaging" name="packages_apps_Messaging" remote="st" />
+  <project path="packages/apps/Nfc" name="packages_apps_Nfc" remote="st" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="st" />
+  <project path="packages/apps/SettingsIntelligence" name="packages_apps_SettingsIntelligence" remote="st" />
+  <project path="packages/apps/Stk" name="packages_apps_Stk" remote="st" />
+  <project path="packages/apps/ThemePicker" name="packages_apps_ThemePicker" remote="st" />
+  <project path="packages/inputmethods/LatinIME" name="packages_inputmethods_LatinIME" remote="st" />
+  <project path="packages/modules/Bluetooth" name="packages_modules_Bluetooth" remote="st" />
+  <project path="packages/modules/common" name="packages_modules_common" remote="st" />
+  <project path="packages/modules/ConfigInfrastructure" name="packages_modules_ConfigInfrastructure" remote="st" />
+  <project path="packages/modules/Connectivity" name="packages_modules_connectivity" revision="14-qpr2" remote="gitlab" />
+  <project path="packages/modules/DnsResolver" name="packages_modules_DnsResolver" remote="st" />
+  <project path="packages/modules/HealthFitness" name="packages_modules_HealthFitness" remote="st" />
+  <project path="packages/modules/NetworkStack" name="packages_modules_NetworkStack" remote="st" />
+  <project path="packages/modules/Permission" name="packages_modules_Permission" remote="st" />
+  <project path="packages/modules/RemoteKeyProvisioning" name="packages_modules_RemoteKeyProvisioning" remote="st" />  
+  <project path="packages/modules/Uwb" name="packages_modules_Uwb" remote="st" />
+  <project path="packages/modules/Wifi" name="packages_modules_Wifi" remote="st" />
+  <project path="packages/providers/ContactsProvider" name="packages_providers_ContactsProvider" remote="st" />
+  <project path="packages/providers/DownloadProvider" name="packages_providers_DownloadProvider" remote="st" />
+  <project path="packages/providers/MediaProvider" name="packages_providers_MediaProvider" remote="st" />
+  <project path="packages/providers/TelephonyProvider" name="packages_providers_TelephonyProvider" remote="st" />
+  <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="st" />
+  <project path="packages/services/Telephony" name="packages_services_Telephony" remote="st" />
+
+  <!-- External -->
+  <project path="external/gptfdisk" name="external_gptfdisk" remote="vos" />
+  <project path="external/libnl" name="external_libnl" remote="vos" />
+  <project path="external/mksh" name="external_mksh" remote="vos" />
+  <project path="external/tinycompress" name="external_tinycompress" remote="vos" />
+
+  <!-- System -->
+  <project path="system/bpf" name="system_bpf" remote="st" />
+  <project path="system/core" name="system_core" remote="st" />
+  <project path="system/libhidl" name="system_libhidl" remote="st" />
+  <project path="system/librustutils" name="system_librustutils" remote="st" />
+  <project path="system/netd" name="system_netd" remote="st" />
+  <project path="system/security" name="system_security" remote="st" />
+  <project path="system/sepolicy" name="system_sepolicy" remote="st" />
+  <project path="system/vold" name="system_vold" remote="st" />
+  <project path="system/update_engine" name="system_update_engine" remote="st" />
+  <project path="system/media" name="system_media" remote="st" />
+
+  <!-- Vendor -->
+  <project path="vendor/qcom/opensource/vibrator" name="vendor_qcom_opensource_vibrator" remote="vos" />
+  <project path="vendor/voltage" name="vendor_voltage" remote="st" />
+
+</manifest>
