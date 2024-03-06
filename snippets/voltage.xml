@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="voltage"
+           revision="14"
+           fetch="https://github.com/VoltageOS" />
+
+  <remote  name="voltage-staging"
+           revision="14"
+           fetch="https://github.com/VoltageOS-staging" />
+
+  <remote  name="VoltageOS-Devices"
+           revision="14"
+           fetch="https://github.com/VoltageOS-Devices" />
+
+  <remote  name="gitlab"
+           revision="14"
+           fetch="https://gitlab.com/VoltageOS" />
+
+  <remote  name="bitbucket"
+           revision="14"
+           fetch="https://bitbucket.org/shuttercat" />
+
+</manifest>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote  name="LineageOS"
+           fetch="https://github.com/"
+           revision="lineage-21.0" />
+
+</manifest>
