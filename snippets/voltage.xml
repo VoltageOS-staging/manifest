@@ -126,6 +126,8 @@
   <project path="external/libnl" name="external_libnl" remote="vos" />
   <project path="external/mksh" name="external_mksh" remote="vos" />
   <project path="external/tinycompress" name="external_tinycompress" remote="vos" />
+  <project path="external/libcxx" name="external_libcxx" remote="st" />
+  <project path="external/wpa_supplicant_8" name="external_wpa_supplicant_8" remote="st" />
 
   <!-- System -->
   <project path="system/bpf" name="system_bpf" remote="st" />
