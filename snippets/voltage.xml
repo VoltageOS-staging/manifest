@@ -43,7 +43,7 @@
 
   <!-- Device -->
   <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy-legacy-um" remote="vos" />
-  <project path="device/voltage/sepolicy" name="device_voltage_sepolicy" remote="vos" />
+  <project path="device/voltage/sepolicy" name="device_voltage_sepolicy" remote="st" />
 
   <!-- Framework -->
   <project path="frameworks/av" name="frameworks_av" remote="st" />
@@ -96,6 +96,7 @@
   <project path="packages/apps/DeskClock" name="packages_apps_DeskClock" remote="vos" />
   <project path="packages/apps/Dialer" name="packages_apps_Dialer" remote="st" />
   <project path="packages/apps/DocumentsUI" name="packages_apps_DocumentsUI" remote="st" />
+  <project path="packages/apps/Etar" name="packages_apps_Etar" remote="st" />
   <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" remote="st" />
   <project path="packages/apps/Messaging" name="packages_apps_Messaging" remote="st" />
   <project path="packages/apps/Nfc" name="packages_apps_Nfc" remote="st" />
