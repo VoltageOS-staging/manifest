@@ -104,6 +104,7 @@
   <project path="packages/apps/Nfc" name="packages_apps_Nfc" remote="st" />
   <project path="packages/apps/Settings" name="packages_apps_Settings" remote="st" />
   <project path="packages/apps/SettingsIntelligence" name="packages_apps_SettingsIntelligence" remote="st" />
+  <project path="packages/apps/SetupWizard2" name="packages_apps_SetupWizard2" remote="st" />
   <project path="packages/apps/Stk" name="packages_apps_Stk" remote="st" />
   <project path="packages/apps/ThemePicker" name="packages_apps_ThemePicker" remote="st" />
   <project path="packages/inputmethods/LatinIME" name="packages_inputmethods_LatinIME" remote="st" />
