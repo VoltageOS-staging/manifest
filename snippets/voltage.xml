@@ -98,6 +98,7 @@
   <project path="packages/apps/Dialer" name="packages_apps_Dialer" remote="st" />
   <project path="packages/apps/DocumentsUI" name="packages_apps_DocumentsUI" remote="st" />
   <project path="packages/apps/Etar" name="packages_apps_Etar" remote="st" />
+  <project path="packages/apps/GmsCompat" name="packages_apps_GmsCompat" remote="st" />
   <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" remote="st" />
   <project path="packages/apps/Messaging" name="packages_apps_Messaging" remote="st" />
   <project path="packages/apps/Nfc" name="packages_apps_Nfc" remote="st" />
@@ -131,6 +132,7 @@
   <project path="external/tinycompress" name="external_tinycompress" remote="vos" />
   <project path="external/libcxx" name="external_libcxx" remote="st" />
   <project path="external/wpa_supplicant_8" name="external_wpa_supplicant_8" remote="st" />
+  <project path="external/GmsCompatConfig" name="external_GmsCompatConfig" remote="st" />
 
   <!-- System -->
   <project path="system/bpf" name="system_bpf" remote="st" />
