@@ -104,6 +104,9 @@
   <remove-project name="platform/hardware/qcom/wlan"/>
   <remove-project name="platform/hardware/interfaces"/>
 
+  <!-- Kernel -->
+  <remove-project name="kernel/configs" />
+
   <!-- Packages -->
   <remove-project name="platform/packages/apps/Settings" />
   <remove-project name="platform/packages/apps/SettingsIntelligence" />
@@ -135,7 +138,6 @@
   <remove-project name="platform/packages/providers/TelephonyProvider"/>
   <remove-project name="platform/packages/services/Telecomm"/>
   <remove-project name="platform/packages/services/Telephony"/>
-
 
   <!-- System -->
   <remove-project name="platform/system/bpf" />
