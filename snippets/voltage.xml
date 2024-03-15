@@ -134,6 +134,7 @@
   <project path="external/libcxx" name="external_libcxx" remote="st" />
   <project path="external/wpa_supplicant_8" name="external_wpa_supplicant_8" remote="st" />
   <project path="external/GmsCompatConfig" name="external_GmsCompatConfig" remote="st" />
+  <project path="external/AppCompatConfig" name="external_AppCompatConfig" remote="st" />
 
   <!-- System -->
   <project path="system/bpf" name="system_bpf" remote="st" />
