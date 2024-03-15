@@ -91,6 +91,7 @@
   <project path="prebuilts/clang/host/linux-x86/trb_clang" name="clang" remote="bitbucket" />
 
   <!-- Packages -->
+  <project path="packages/apps/AppCompatConfig" name="packages_apps_AppCompatConfig" remote="st" />
   <project path="packages/apps/Contacts" name="packages_apps_Contacts" remote="st" />
   <project path="packages/apps/Covers" name="packages_apps_Covers" remote="vos" />
   <project path="packages/apps/DeskClock" name="packages_apps_DeskClock" remote="vos" />
