@@ -155,5 +155,6 @@
   <!-- Vendor -->
   <project path="vendor/qcom/opensource/vibrator" name="vendor_qcom_opensource_vibrator" remote="vos" />
   <project path="vendor/voltage" name="vendor_voltage" remote="st" />
+  <project path="vendor/certification" name="vendor_certification" remote="gitlab" />
 
 </manifest>
