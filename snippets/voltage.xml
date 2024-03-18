@@ -88,7 +88,7 @@
     <linkfile src="os_pickup.bp" dest="kernel/google/gs201/private/google-modules/Android.bp" />
   </project>
   <project path="hardware/qcom-caf/sm8150/display" name="hardware_qcom_display" revision="14-sm8150" remote="vos" />
-
+  <project path="hardware/qcom-caf/sm8150/media" name="hardware_qcom_media" revision="14-sm8150" remote="vos" />
   <project path="prebuilts/clang/host/linux-x86/trb_clang" name="clang" remote="bitbucket" />
 
   <!-- Packages -->
