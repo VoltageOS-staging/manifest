@@ -2,9 +2,10 @@
 <manifest>
 
   <!-- Build -->
+  <remove-project name="platform/development" />
   <remove-project name="platform/build" />
   <remove-project name="platform/build/soong" />
-
+  <remove-project name="platform/build/blueprint" />
   <remove-project name="platform/art" />
   <remove-project name="platform/bionic" />
   <remove-project name="platform/bootable/deprecated-ota" />
@@ -143,6 +144,7 @@
   <remove-project name="platform/packages/modules/Permission"/>
   <remove-project name="platform/packages/modules/RemoteKeyProvisioning"/>
   <remove-project name="platform/packages/modules/Uwb"/>
+  <remove-project name="platform/packages/modules/Virtualization"/>
   <remove-project name="platform/packages/modules/Wifi"/>
   <remove-project name="platform/packages/providers/ContactsProvider"/>
   <remove-project name="platform/packages/providers/DownloadProvider"/>
