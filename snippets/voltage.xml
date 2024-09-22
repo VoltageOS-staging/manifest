@@ -9,7 +9,7 @@
            fetch="https://gitlab.com/voltageos" />
 
   <!-- Build -->
-  <project path="development" name="development" remote="vos" />
+  <project path="build/blueprint" name="build_blueprint" remote="vos" />
   <project path="build/make" name="build" remote="vos" >
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
@@ -23,12 +23,12 @@
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
-  <project path="build/blueprint" name="build_blueprint" remote="vos" />
 
   <project path="art" name="art" remote="vos" />
   <project path="bionic" name="bionic" remote="vos" />
   <project path="bootable/deprecated-ota" name="bootable_deprecated-ota" remote="vos" />
   <project path="bootable/recovery" name="bootable_recovery" remote="vos" />
+  <project path="development" name="development" remote="vos" />
   <project path="libcore" name="libcore" remote="vos" />
 
   <!-- Device -->
@@ -40,19 +40,23 @@
   <project path="device/voltage/sepolicy" name="device_voltage_sepolicy" remote="vos" />
 
   <!-- External -->
+  <project path="external/ant-wireless/ant_client" name="external_ant-wireless_ant_client" remote="vos" />
+  <project path="external/ant-wireless/ant_native" name="external_ant-wireless_ant_native" remote="vos" />
+  <project path="external/ant-wireless/ant_service" name="external_ant-wireless_ant_service" remote="vos" />
+  <project path="external/ant-wireless/hidl" name="external_ant-wireless_hidl" remote="vos" />
   <project path="external/e2fsprogs" name="external_e2fsprogs" remote="vos" />
+  <project path="external/GmsCompatConfig" name="external_GmsCompatConfig" remote="vos" />
   <project path="external/gptfdisk" name="external_gptfdisk" remote="vos" />
   <project path="external/json-c" name="external_json-c" remote="vos" />
   <project path="external/mksh" name="external_mksh" remote="vos" />
   <project path="external/tinycompress" name="external_tinycompress" remote="vos" />
-  <project path="external/GmsCompatConfig" name="external_GmsCompatConfig" remote="vos" />
 
   <!-- Framework -->
   <project path="frameworks/av" name="frameworks_av" remote="vos" />
   <project path="frameworks/base" name="frameworks_base" remote="vos" />
-  <project path="frameworks/native" name="frameworks_native" remote="vos" />
   <project path="frameworks/libs/modules-utils" name="frameworks_libs_modules-utils" remote="vos" />
   <project path="frameworks/libs/systemui" name="frameworks_libs_systemui" remote="vos" />
+  <project path="frameworks/native" name="frameworks_native" remote="vos" />
   <project path="frameworks/opt/calendar" name="frameworks_opt_calendar" remote="vos" />
   <project path="frameworks/opt/colorpicker" name="frameworks_opt_colorpicker" remote="vos" />
   <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="vos" />
@@ -93,7 +97,6 @@
     <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8550/Android.bp" />
     <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8550/Android.mk" />
   </project>
-  <project path="hardware/qcom-caf/sm8150/audio" name="hardware_qcom_audio" revision="15-sm8150" remote="vos" />
 
   <!-- Kernel -->
   <project path="kernel/configs" name="kernel_configs" remote="vos" />
@@ -102,6 +105,7 @@
   <project path="packages/apps/Aperture" name="packages_apps_Aperture" remote="vos" />
   <project path="packages/apps/Contacts" name="packages_apps_Contacts" remote="vos" />
   <project path="packages/apps/DeskClock" name="packages_apps_DeskClock" remote="vos" />
+  <project path="packages/apps/Dialer" name="packages_apps_Dialer" remote="vos" />
   <project path="packages/apps/DocumentsUI" name="packages_apps_DocumentsUI" remote="vos" />
   <project path="packages/apps/Etar" name="packages_apps_Etar" remote="vos" />
   <project path="packages/apps/ExactCalculator" name="packages_apps_ExactCalculator" remote="vos" />
@@ -111,6 +115,7 @@
   <project path="packages/apps/LogViewer" name="packages_apps_LogViewer" remote="vos" />
   <project path="packages/apps/Messaging" name="packages_apps_Messaging" remote="vos" />
   <project path="packages/apps/Nfc" name="packages_apps_Nfc" remote="vos" />
+  <project path="packages/apps/Powerhub" name="packages_apps_Powerhub" remote="vos" />
   <project path="packages/apps/Settings" name="packages_apps_Settings" remote="vos" />
   <project path="packages/apps/ThemePicker" name="packages_apps_ThemePicker" remote="vos" />
   <project path="packages/inputmethods/LatinIME" name="packages_inputmethods_LatinIME" remote="vos" />
@@ -143,6 +148,7 @@
   <project path="system/libhidl" name="system_libhidl" remote="vos" />
   <project path="system/librustutils" name="system_librustutils" remote="vos" />
   <project path="system/media" name="system_media" remote="vos" />
+  <project path="system/netd" name="system_netd" remote="vos" />
   <project path="system/security" name="system_security" remote="vos" />
   <project path="system/sepolicy" name="system_sepolicy" remote="vos" />
   <project path="system/vold" name="system_vold" remote="vos" />
@@ -151,9 +157,11 @@
   <project path="tools/extract-utils" name="tools_extract-utils" remote="vos" />
 
   <!-- Vendor -->
-  <project path="vendor/qcom/opensource/data-ipa-cfg-mgr-legacy-um" name="vendor_qcom_opensource_data-ipa-cfg-mgr-legacy-um" remote="vos" />
+  <project path="vendor/certification" name="vendor_certification" remote="gitlab" />
   <project path="vendor/lineage_compat" name="vendor_lineage_compat" remote="vos" />
+  <project path="vendor/support" name="vendor_support" remote="vos" />
+  <project path="vendor/SystemUIClocks" name="vendor_SystemUIClocks" remote="vos" />
   <project path="vendor/voltage" name="vendor_voltage" remote="vos" />
-    <project path="vendor/support" name="vendor_support" remote="vos" />
+  <project path="vendor/voltage-priv/keys" name="vendor_voltage-priv_keys" remote="vos" />
 
 </manifest>
