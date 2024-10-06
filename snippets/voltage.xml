@@ -137,6 +137,7 @@
   <project path="packages/providers/TelephonyProvider" name="packages_providers_TelephonyProvider" remote="vos" />
   <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="vos" />
   <project path="packages/services/Telephony" name="packages_services_Telephony" remote="vos" />
+  <project path="packages/services/OmniJaws" name="packages_services_OmniJaws" remote="gitlab" />
   <project path="packages/resources/devicesettings" name="packages_resources_devicesettings" remote="vos" />
 
   <!-- Prebuilts -->
