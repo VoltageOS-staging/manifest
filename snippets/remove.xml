@@ -101,6 +101,7 @@
   <remove-project name="platform/external/gptfdisk" />
   <remove-project name="platform/external/mksh" />
   <remove-project name="platform/external/tinycompress"/>
+  <remove-project name="platform/external/dtc" />
 
   <!-- Framework -->
   <remove-project name="platform/frameworks/av" />
@@ -164,5 +165,7 @@
   <remove-project name="platform/system/security" />
   <remove-project name="platform/system/sepolicy"/>
   <remove-project name="platform/system/vold" />
-
+  <remove-project name="platform/system/extras" />
+  <remove-project name="platform/system/keymaster" />
+  <remove-project name="platform/system/tools/mkbootimg" />
 </manifest>
