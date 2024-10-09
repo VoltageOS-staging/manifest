@@ -143,6 +143,7 @@
 
   <!-- Prebuilts -->
   <project path="prebuilts/extract-tools" name="prebuilts_extract-tools" clone-depth="1" remote="vos" />
+  <project path="prebuilts/calyx/datura" name="prebuilts_calyx_datura" remote="vos" />
 
   <!-- System -->
   <project path="system/bpf" name="system_bpf" remote="vos" />
