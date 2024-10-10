@@ -111,6 +111,7 @@
   <project path="packages/apps/Etar" name="packages_apps_Etar" remote="vos" />
   <project path="packages/apps/ExactCalculator" name="packages_apps_ExactCalculator" remote="vos" />
   <project path="packages/apps/Glimpse" name="packages_apps_Glimpse" remote="vos" />
+  <project path="packages/apps/GameSpace" name="packages_apps_GameSpace" remote="vos" />
   <project path="packages/apps/GmsCompat" name="packages_apps_GmsCompat" remote="vos" />
   <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" remote="vos" />
   <project path="packages/apps/LogViewer" name="packages_apps_LogViewer" remote="vos" />
