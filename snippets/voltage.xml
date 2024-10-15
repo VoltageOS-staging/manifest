@@ -118,6 +118,7 @@
   <project path="packages/apps/Messaging" name="packages_apps_Messaging" remote="vos" />
   <project path="packages/apps/Nfc" name="packages_apps_Nfc" remote="vos" />
   <project path="packages/apps/Powerhub" name="packages_apps_Powerhub" remote="vos" />
+  <project path="packages/apps/ParanoidSense" name="packages_apps_ParanoidSense" remote="gitlab" />
   <project path="packages/apps/ParallelSpace" name="packages_apps_ParallelSpace" remote="vos" />
   <project path="packages/apps/Settings" name="packages_apps_Settings" remote="vos" />
   <project path="packages/apps/ThemePicker" name="packages_apps_ThemePicker" remote="vos" />
