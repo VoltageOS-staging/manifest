@@ -51,6 +51,8 @@
   <project path="external/mksh" name="external_mksh" remote="vos" />
   <project path="external/tinycompress" name="external_tinycompress" remote="vos" />
   <project path="external/dtc" name="external_dtc" remote="vos" />
+  <project path="external/seedvault" name="external_seedvault" remote="vos" />
+  <project path="external/setupcompat" name="external_setupcompat" remote="vos" />
 
   <!-- Framework -->
   <project path="frameworks/av" name="frameworks_av" remote="vos" />
@@ -122,6 +124,8 @@
   <project path="packages/apps/ParanoidSense" name="packages_apps_ParanoidSense" remote="gitlab" />
   <project path="packages/apps/ParallelSpace" name="packages_apps_ParallelSpace" remote="vos" />
   <project path="packages/apps/Settings" name="packages_apps_Settings" remote="vos" />
+  <project path="packages/apps/SettingsIntelligence" name="packages_apps_SettingsIntelligence" remote="vos" />
+  <project path="packages/apps/SetupWizard" name="packages_apps_SetupWizard" remote="vos" />
   <project path="packages/apps/ThemePicker" name="packages_apps_ThemePicker" remote="vos" />
   <project path="packages/apps/TouchGestures" name="packages_apps_TouchGestures" remote="vos" />
   <project path="packages/apps/Updater" name="packages_apps_Updater" remote="vos" />

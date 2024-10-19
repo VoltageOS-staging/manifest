@@ -102,6 +102,7 @@
   <remove-project name="platform/external/mksh" />
   <remove-project name="platform/external/tinycompress"/>
   <remove-project name="platform/external/dtc" />
+  <remove-project name="platform/external/setupcompat" />
 
   <!-- Framework -->
   <remove-project name="platform/frameworks/av" />
@@ -134,6 +135,7 @@
   <remove-project name="platform/packages/apps/Messaging" />
   <remove-project name="platform/packages/apps/Nfc" />
   <remove-project name="platform/packages/apps/Settings" />
+  <remove-project name="platform/packages/apps/SettingsIntelligence" />
   <remove-project name="platform/packages/apps/ThemePicker" />
   <remove-project name="platform/packages/inputmethods/LatinIME" />
   <remove-project name="platform/packages/modules/Bluetooth"/>
