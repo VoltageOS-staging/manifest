@@ -168,4 +168,6 @@
   <remove-project name="platform/system/extras" />
   <remove-project name="platform/system/keymaster" />
   <remove-project name="platform/system/tools/mkbootimg" />
+  <remove-project name="platform/system/update_engine" />
+
 </manifest>
